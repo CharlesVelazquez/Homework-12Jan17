@@ -1,7 +1,8 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Charles Velazquez</title>
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="Contact_me.css">
 	</head>
 		<div id = 'Main_Title'>
 			<h1>Charles Velazquez</h1>
@@ -25,13 +26,22 @@
 				</ul>
 			</nav>
 		</header>
-		<div id = 'image'>
-			<img src="images/Me.jpg" width = '100%' height = '50%'>
-		</div>
-		<div id = 'text'>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur tempor lacinia. Nulla vel volutpat turpis, eu malesuada enim. Nunc eu porta augue. Fusce hendrerit ante eget tortor eleifend consectetur. Aenean eu placerat ante. Duis vitae magna quam. Nam gravida elit tellus. Cras viverra, ipsum sed mattis ornare, est purus ullamcorper elit, quis luctus enim odio et neque. Nam imperdiet quis nibh quis imperdiet. Praesent vestibulum pellentesque eros, ut tempor est tempus eget. Fusce tempor auctor massa. Donec tincidunt orci id faucibus faucibus 
-			</p>
-		</div>
+		<div class="wrapper">
+ 			<form action="action_page.php">
+				<label for="fname">First Name</label>
+    				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+				<label for="lname">Last Name</label>
+    				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+   				<label for="country">Country</label>
+    				<select id="country" name="country">
+      					<option value="Other">Other</option>
+      					<option value="USA">USA</option>
+    				</select>
+				<label for="subject">Subject</label>
+    				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div> 
 	</body>
 </html>

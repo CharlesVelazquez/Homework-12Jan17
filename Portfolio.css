@@ -40,12 +40,15 @@
 }
 
 .gallery {
-    border: 1px solid grey;
+	margin: 5px;
+    float: left;
+    width: 180px;
+    border: 2px solid grey;
 }
 
 
-.gallery {
-    border: 1px solid #black;
+.gallery:hover {
+    border: 2px solid black;
 }
 
 .gallery img {
@@ -59,26 +62,36 @@
     text-align: center;
 }
 
-.media {
+/* .media {
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 25%;
+} */
+
+@media only screen and (min-width: 1px) and (max-width: 480px){
+    {
+    	
 }
 
-@media only screen and (max-width: 700px){
-    .media {
-        width: 49.99999%;
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    {
+    	.media
+    	{
+    		width: 100%;
+    	}
+`
+}
+
+@media only screen and and (min-width: 769px) (max-width: 992px){
+    {
+    	.media
+    	{
+    	width: 49.99999%;
         margin: 6px 0;
+    	}
     }
-}
 
-@media only screen and (max-width: 500px){
-    .media {
-        width: 100%;
-    }
-}
-
-.clearfix:after {
+.projects:after {
     content: "";
     display: table;
     clear: both;
